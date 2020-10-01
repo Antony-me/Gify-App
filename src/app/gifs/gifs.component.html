@@ -1,10 +1,9 @@
 <div class="container">
-    <button #gif (onclick)='reload()' class="btn btn-info">Get More</button>
     <div class="row pl-5">
         <div class="col-md-3"></div>
         <div class="pl-5" *ngFor='let gif of gifs'>
-            <div class="card extra" style="width: 18rem; height: 22rem;">
-                <img [src]="gif.images.downsized.url" class="card-img-top text-center gif" alt="image">
+            <div class="card extra">
+                <img [src]="gif.images.downsized.url" class="card-img-top text-center gif" alt="gif">
                 <div class="card-body">
                     <p class="card-text"></p>
                 </div>
