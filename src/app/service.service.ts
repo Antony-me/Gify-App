@@ -30,7 +30,7 @@ export class ServiceService {
  }
  //getmore gifs button
  reloadGifs(){
-   return this.http.get('https://api.giphy.com/v1/gifs/random?api_key=v6AIPullMVVn049JpeH0xQoHTuJReOHJ&tag=&rating=g')
+   return this.http.get('https://api.giphy.com/v1/gifs/random?api_key=v6AIPullMVVn049JpeH0xQoHTuJReOHJ&tag&rating=g')
    .subscribe((response:any)=>{
     this.gifs.next(response.data)
    });
