@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>Trending Gifs</h3>
+    <div class="row pl-5 ">
+        <ng-progress></ng-progress>
+        <div class="gif" *ngFor='let gif of gifs'>
+            <div class="gifs">
+                <img [src]="gif.images.downsized.url" class="card-img-top text-center gif" alt="gif">
+            </div>
+        </div>
+    </div>
+</div>
