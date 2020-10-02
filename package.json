@@ -21,6 +21,8 @@
     "@angular/router": "~10.1.1",
     "@ngx-progressbar/core": "^3.0.2",
     "@ngx-progressbar/http-client": "^3.0.2",
+    "bootstrap": "^4.5.2",
+    "popper": "^1.0.1",
     "rxjs": "~6.6.0",
     "rxjs-compat": "^6.6.3",
     "tslib": "^2.0.0",
