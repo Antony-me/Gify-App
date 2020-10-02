@@ -13,7 +13,7 @@ export class ServiceService {
 
   constructor(private http:HttpClient) { }
   getTrendyGifs() {
-    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${environment.ApiKey}&limit=25&rating=g`)
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${environment.ApiKey}&limit=20&rating=g`)
     .subscribe((response: any)=> {
      this.gifs.next(response.data);
     });
