@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 import { GifsComponent } from './gifs/gifs.component';
-// import { from } from 'rxjs';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { NgProgressModule } from '@ngx-progressbar/core';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { GifsComponent } from './gifs/gifs.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

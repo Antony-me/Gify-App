@@ -1,0 +1,13 @@
+*{
+    background-color:black;
+}
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    width: 1000px;
+    margin: 5px auto;
+}
+
+.gifs img{
+    max-width: 200px;
+}

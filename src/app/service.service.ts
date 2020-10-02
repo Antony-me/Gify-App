@@ -20,7 +20,7 @@ export class ServiceService {
   }
 
   searchGifs(gifName: string) {
-    return this.http.get(`https://api.giphy.com/v1/gifs/search?q=${gifName}&api_key=jXgxtfwSwom2P18Po2BpFSjLguu2UTDf&limit=25&rating=g`)
+    return this.http.get(`https://api.giphy.com/v1/gifs/search?q=${gifName}&api_key=${environment.SearchApiKey}&limit=25&rating=g`)
       .subscribe((response: any) => {
         this.gifs.next(response.data);
       });;
